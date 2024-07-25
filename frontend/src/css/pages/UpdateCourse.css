@@ -1,0 +1,68 @@
+.update-course-container {
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+  }
+  
+  .error-text {
+    color: #ff0000;
+    font-size: 0.875rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .update-button, .cancel-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .update-button {
+    background: #007bff;
+  }
+  
+  .cancel-button {
+    background: #6c757d;
+  }
+  
+  @media (max-width: 768px) {
+    .update-course-container {
+      padding: 0.5rem;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .update-button, .cancel-button {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  
+    .update-button:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
