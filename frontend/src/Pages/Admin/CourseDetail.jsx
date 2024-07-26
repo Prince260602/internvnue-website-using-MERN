@@ -25,8 +25,11 @@ const CourseDetail = () => {
       <img
         src={course.courseImage || "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_640.png"}
         alt={course.courseName}
-        className="object-cover object-center w-full h-80 rounded-t-md"
+       className="object-contain object-center w-full h-72 m-4 rounded-t-md"
       />
+
+
+
       <h2 className="text-3xl font-semibold text-gray-800 mt-4">{course.courseName}</h2>
       <p className="text-lg text-gray-700 mt-2">Price: ${course.coursePrice}</p>
       <p className="text-lg text-gray-700 mt-2">Duration: {course.courseDuration}</p>
