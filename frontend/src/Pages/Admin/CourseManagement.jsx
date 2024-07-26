@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { MdDeleteForever } from "react-icons/md";
 import { PiNotePencilBold } from "react-icons/pi";
@@ -60,14 +60,11 @@ const CourseManagement = () => {
               key={course._id}
               className="max-w-xs rounded-md shadow-md bg-white dark:bg-gray-50 dark:text-gray-800 m-4"
             >
-
-
-            <img
+              <img
               src={course.courseImage || "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_640.png"}
               alt={course.courseName}
               className="object-contain object-center w-full h-72 m-4 rounded-t-md"
             />
-
               <div className="flex flex-col justify-between p-6 space-y-4">
                 <div className="space-y-2">
                   <h2 className="text-2xl font-semibold text-gray-800">{course.courseName}</h2>
@@ -114,3 +111,6 @@ const CourseManagement = () => {
 };
 
 export default CourseManagement;
+
+
+
